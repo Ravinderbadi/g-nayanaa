@@ -215,3 +215,116 @@
 2025-06-23 12:25:29,635 - INFO - Data inserted successfully for patient id 125
 2025-06-23 12:26:20,279 - INFO - Returning patient 125 – new visit recorded.
 2025-06-23 12:26:20,300 - INFO - Data inserted successfully for patient id 125
+2025-06-23 12:39:37,753 - INFO - ✅ Data retrieved successfully for all patients
+2025-06-23 12:40:25,970 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 12:40:40,378 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 12:41:10,940 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 12:41:21,813 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 12:42:23,557 - INFO - Returning patient 1006 – new visit recorded.
+2025-06-23 12:42:23,566 - ERROR - An error occurred: 400: HbA1c Level must be between 4.0% and 14.0%.
+2025-06-23 12:43:07,783 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:43:07,818 - ERROR - An error occurred: 400: HbA1c Level must be between 4.0% and 14.0%.
+2025-06-23 12:43:22,872 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:43:22,909 - ERROR - An error occurred: 400: HbA1c Level must be between 4.0% and 14.0%.
+2025-06-23 12:43:38,882 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:43:38,890 - ERROR - An error occurred: 400: Blood Pressure must be between 90 and 200 mmHg.
+2025-06-23 12:43:49,421 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:43:49,429 - ERROR - An error occurred: 400: Fasting Blood Glucose must be between 70 and 300 mg/dL.
+2025-06-23 12:44:01,402 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:44:01,410 - ERROR - An error occurred: 400: BMI must be between 15 and 50 kg/m².
+2025-06-23 12:44:15,311 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:44:15,350 - ERROR - An error occurred: 400: Cholesterol must be between 100 and 300 mg/dL.
+2025-06-23 12:44:33,984 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:44:34,024 - ERROR - An error occurred: 400: Albuminuria must be between 0.5 and 3.0 mg/dL.
+2025-06-23 12:45:33,133 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:45:33,151 - INFO - ✅ Patient record created for patient_id 125
+2025-06-23 12:45:48,339 - INFO - ✅ Data retrieved successfully for all patients
+2025-06-23 12:46:14,401 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 12:46:14,625 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 12:48:09,432 - INFO - ✅ Data retrieved successfully for all patients
+2025-06-23 12:48:44,891 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 12:52:26,237 - INFO - Returning patient 11111 – new visit recorded.
+2025-06-23 12:52:26,255 - INFO - ✅ Patient record created for patient_id 11111
+2025-06-23 12:52:37,597 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 12:53:04,543 - INFO - Returning patient 11111 – new visit recorded.
+2025-06-23 12:53:04,562 - INFO - ✅ Patient record created for patient_id 11111
+2025-06-23 12:53:12,739 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 12:53:22,285 - INFO - New patient 111114 – first-time registration.
+2025-06-23 12:53:22,336 - INFO - ✅ Patient record created for patient_id 111114
+2025-06-23 12:53:29,616 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 12:53:59,089 - INFO - Data get successfully for patient id 111114
+2025-06-23 12:54:30,999 - INFO - ✅ Data retrieved successfully for all patients
+2025-06-23 12:55:13,982 - INFO - Data updated successfully for patient id 111114
+2025-06-23 12:55:34,807 - INFO - Data get successfully for patient id 111114
+2025-06-23 13:55:29,442 - INFO - New patient 2000 – first-time registration.
+2025-06-23 13:55:29,460 - ERROR - An error occurred: 400: HbA1c Level must be between 4.0% and 14.0%.
+2025-06-23 13:56:19,767 - INFO - New patient 2000 – first-time registration.
+2025-06-23 13:56:19,816 - ERROR - An error occurred: 400: HbA1c Level must be between 4.0% and 14.0%.
+2025-06-23 13:56:41,853 - INFO - New patient 2000 – first-time registration.
+2025-06-23 13:56:41,900 - ERROR - An error occurred: 400: Blood Pressure must be between 90 and 200 mmHg.
+2025-06-23 13:57:03,146 - INFO - New patient 2000 – first-time registration.
+2025-06-23 13:57:03,156 - ERROR - An error occurred: 400: Fasting Blood Glucose must be between 70 and 300 mg/dL.
+2025-06-23 13:57:16,081 - INFO - New patient 2000 – first-time registration.
+2025-06-23 13:57:16,119 - ERROR - An error occurred: 400: BMI must be between 15 and 50 kg/m².
+2025-06-23 13:57:41,536 - INFO - New patient 2000 – first-time registration.
+2025-06-23 13:57:41,586 - ERROR - An error occurred: 400: Cholesterol must be between 100 and 300 mg/dL.
+2025-06-23 13:57:58,559 - INFO - New patient 2000 – first-time registration.
+2025-06-23 13:57:58,574 - ERROR - An error occurred: 400: Age must be between 18 and 90 years.
+2025-06-23 13:58:15,424 - INFO - New patient 2000 – first-time registration.
+2025-06-23 13:58:15,436 - ERROR - An error occurred: 400: Albuminuria must be between 0.5 and 3.0 mg/dL.
+2025-06-23 13:58:27,633 - INFO - New patient 2000 – first-time registration.
+2025-06-23 13:58:27,695 - ERROR - An error occurred: 400: Visual Acuity must be one of: Normal, Mild, Moderate, Severe, Proliferative
+2025-06-23 13:58:42,173 - INFO - New patient 2000 – first-time registration.
+2025-06-23 13:58:42,199 - INFO - ✅ Patient record created for patient_id 2000
+2025-06-23 13:58:58,312 - INFO - Returning patient 2000 – new visit recorded.
+2025-06-23 13:58:58,336 - INFO - ✅ Patient record created for patient_id 2000
+2025-06-23 13:59:12,277 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 13:59:41,547 - INFO - Data get successfully for patient id 2000
+2025-06-23 14:01:07,234 - INFO - Data updated successfully for patient id 2000
+2025-06-23 14:01:20,553 - INFO - Data get successfully for patient id 2000
+2025-06-23 14:04:00,260 - INFO - Data get successfully for patient id 2000
+2025-06-23 14:04:59,851 - INFO - Data updated successfully for patient id 2000
+2025-06-23 14:05:20,684 - INFO - Data get successfully for patient id 2000
+2025-06-23 14:06:44,836 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 14:07:02,186 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 14:07:20,861 - INFO - Returning patient 2000 – new visit recorded.
+2025-06-23 14:07:20,898 - ERROR - An error occurred: 400: HbA1c Level must be between 4.0% and 14.0%.
+2025-06-23 14:08:41,109 - INFO -  Deleted patient with patient_id 2000
+2025-06-23 14:09:00,442 - ERROR - An error occurred: 404: Patient not found
+2025-06-23 14:09:19,567 - INFO - ✅ Data retrieved successfully for all patients
+2025-06-23 14:20:23,182 - INFO - New patient 1990 – first-time registration.
+2025-06-23 14:20:23,195 - ERROR - An error occurred: 400: HbA1c Level must be between 4.0% and 14.0%.
+2025-06-23 14:20:45,528 - INFO - New patient 1990 – first-time registration.
+2025-06-23 14:20:45,578 - ERROR - An error occurred: 400: Blood Pressure must be between 90 and 200 mmHg.
+2025-06-23 14:21:26,409 - INFO - New patient 1990 – first-time registration.
+2025-06-23 14:21:26,439 - ERROR - An error occurred: 400: HbA1c Level must be between 4.0% and 14.0%.
+2025-06-23 14:21:43,436 - INFO - New patient 1990 – first-time registration.
+2025-06-23 14:21:43,450 - ERROR - An error occurred: 400: Blood Pressure must be between 90 and 200 mmHg.
+2025-06-23 14:22:13,369 - INFO - New patient 1990 – first-time registration.
+2025-06-23 14:22:13,379 - ERROR - An error occurred: 400: Fasting Blood Glucose must be between 70 and 300 mg/dL.
+2025-06-23 14:22:34,332 - INFO - New patient 1990 – first-time registration.
+2025-06-23 14:22:34,347 - ERROR - An error occurred: 400: BMI must be between 15 and 50 kg/m².
+2025-06-23 14:23:01,404 - INFO - New patient 1990 – first-time registration.
+2025-06-23 14:23:01,428 - ERROR - An error occurred: 400: Cholesterol must be between 100 and 300 mg/dL.
+2025-06-23 14:23:59,542 - INFO - New patient 1990 – first-time registration.
+2025-06-23 14:23:59,555 - ERROR - An error occurred: 400: Age must be between 18 and 90 years.
+2025-06-23 14:24:10,242 - INFO - New patient 1990 – first-time registration.
+2025-06-23 14:24:10,256 - ERROR - An error occurred: 400: Albuminuria must be between 0.5 and 3.0 mg/dL.
+2025-06-23 14:24:31,944 - INFO - New patient 1990 – first-time registration.
+2025-06-23 14:24:31,954 - ERROR - An error occurred: 400: Visual Acuity must be one of: Normal, Mild, Moderate, Severe, Proliferative
+2025-06-23 14:24:49,598 - INFO - New patient 1990 – first-time registration.
+2025-06-23 14:24:49,608 - ERROR - An error occurred: 400: Mobile number must contain exactly 10 digits.
+2025-06-23 14:25:09,461 - INFO - New patient 1990 – first-time registration.
+2025-06-23 14:25:09,488 - INFO - ✅ Patient record created for patient_id 1990
+2025-06-23 14:25:28,396 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 14:25:39,428 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 14:26:07,482 - INFO - Returning patient 1990 – new visit recorded.
+2025-06-23 14:26:07,502 - INFO - ✅ Patient record created for patient_id 1990
+2025-06-23 14:26:15,715 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 14:26:45,555 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 14:26:56,553 - INFO - Returning patient 1990 – new visit recorded.
+2025-06-23 14:26:56,569 - INFO - ✅ Patient record created for patient_id 1990
+2025-06-23 14:28:12,122 - INFO - New patient 1991 – first-time registration.
+2025-06-23 14:28:12,144 - ERROR - An error occurred: 400: Mobile number must contain exactly 10 digits.
+2025-06-23 14:28:29,563 - INFO - New patient 1991 – first-time registration.
+2025-06-23 14:28:29,576 - ERROR - An error occurred: 400: Mobile number must contain exactly 10 digits.

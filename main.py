@@ -581,6 +581,9 @@ def create_patient(patient_id: int, form: Form2):
             raise HTTPException(status_code=400, detail="Albuminuria must be between 0.5 and 3.0 mg/dL.")
         if form.Visual_Acuity not in ["Normal", "Mild", "Moderate", "Severe", "Proliferative"]:
             raise HTTPException(status_code=400, detail="Visual Acuity must be one of: Normal, Mild, Moderate, Severe, Proliferative")
+        if not (form.mobile_number.isdigit() and len(form.mobile_number) == 10):
+            raise HTTPException(status_code=400, detail="Mobile number must contain exactly 10 digits.")
+
 
         # 4. Insert the patient visit
         insert_query = """
@@ -711,6 +714,9 @@ def update_patient_partial(patient_id: int, form: PatientPartialUpdate):
         if "Visual_Acuity" in update_data:
             if update_data["Visual_Acuity"] not in ["Normal", "Mild", "Moderate", "Severe", "Proliferative"]:
                 raise HTTPException(status_code=400, detail=" Visual Acuity in [Normal, Mild, Moderate, Severe, Proliferative] ")
+        if not (form.mobile_number.isdigit() and len(form.mobile_number) == 10):
+            raise HTTPException(status_code=400, detail="Mobile number must contain exactly 10 digits.")
+
 
         # Build dynamic SQL update statement
         set_clause = ", ".join(f"{key} = %s" for key in update_data.keys())
