@@ -537,7 +537,6 @@ def get_dr_data():
 
 @app.post("/", status_code=status.HTTP_201_CREATED)
 def create_patient(patient_id: int, form: Form2):
-    # create the DB connection
     conn = connection
     cursor = conn.cursor(dictionary=True)
 
@@ -551,14 +550,19 @@ def create_patient(patient_id: int, form: Form2):
         """, (patient_id,))
         existing_patient = cursor.fetchone()
 
-        # 2. If mobile number mismatch, reject
-        if existing_patient and existing_patient["mobile_number"] != form.mobile_number:
-            raise HTTPException(
-                status_code=status.HTTP_400_BAD_REQUEST,
-                detail="Patient ID exists but with a different mobile number."
-            )
+        # 2. If patient exists, check mobile number
+        if existing_patient:
+            if existing_patient["mobile_number"] != form.mobile_number:
+                raise HTTPException(
+                    status_code=status.HTTP_400_BAD_REQUEST,
+                    detail="Patient ID exists but with a different mobile number."
+                )
+            else:
+                logger.info(f"Returning patient {patient_id} – new visit recorded.")
+        else:
+            logger.info(f"New patient {patient_id} – first-time registration.")
 
-        # 3. Validation checks
+        # 3. Validation checks (apply to both new and returning patients)
         if not (0 <= form.Duration_of_Diabetes <= 50):
             raise HTTPException(status_code=400, detail="Duration of Diabetes must be between 0 and 50 years.")
         if not (4.0 <= form.HbA1c_Level <= 14.0):
@@ -578,7 +582,7 @@ def create_patient(patient_id: int, form: Form2):
         if form.Visual_Acuity not in ["Normal", "Mild", "Moderate", "Severe", "Proliferative"]:
             raise HTTPException(status_code=400, detail="Visual Acuity must be one of: Normal, Mild, Moderate, Severe, Proliferative")
 
-        # 4. Insert into table
+        # 4. Insert the patient visit
         insert_query = """
             INSERT INTO patient_form (
                 patient_id, name, Duration_of_Diabetes, HbA1c_Level, Blood_Pressure,
@@ -598,19 +602,17 @@ def create_patient(patient_id: int, form: Form2):
         ))
 
         conn.commit()
-        
-        logger.info(f"Data inserted successfully for patient id {patient_id}")
-
+        logger.info(f"✅ Patient record created for patient_id {patient_id}")
         return {"message": "Patient record created successfully", "patient_id": patient_id}
+
     except Exception as e:
         logger.error(f"An error occurred: {e}")
-        connection.rollback()  # Rollback the transaction in case of an error
+        conn.rollback()
         raise HTTPException(status_code=500, detail=f"Database error: {e}")
 
     finally:
         cursor.close()
-        #conn.close()
-        
+
 
 
 @app.get("/patient/{patient_id}", status_code=status.HTTP_200_OK)

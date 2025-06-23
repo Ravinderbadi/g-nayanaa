@@ -154,3 +154,64 @@
 2025-06-20 12:01:01,192 - INFO - [START] Inference API hit for patient: 9999 from 172.18.0.1
 2025-06-20 12:01:18,377 - INFO - [SUCCESS] Processed inference for 9999 | Duration: 17.19s
 2025-06-20 12:12:14,421 - INFO - Data inserted successfully for patient id 9999
+2025-06-23 06:55:13,870 - ERROR - Error: 404: No records found for this patient ID.
+2025-06-23 06:55:45,918 - INFO - ✅ Data retrieved successfully for all patients
+2025-06-23 06:57:04,111 - ERROR - Error: 404: No records found for this patient ID.
+2025-06-23 06:59:52,764 - INFO - [START] Inference API hit for patient: 11111 from 172.18.0.1
+2025-06-23 07:00:19,137 - INFO - [SUCCESS] Processed inference for 11111 | Duration: 26.37s
+2025-06-23 07:02:09,193 - INFO - Data inserted successfully for patient id 11111
+2025-06-23 07:02:58,525 - ERROR - An error occurred: 400: HbA1c Level must be between 4.0% and 14.0%.
+2025-06-23 07:03:13,520 - ERROR - An error occurred: 400: Blood Pressure must be between 90 and 200 mmHg.
+2025-06-23 07:03:26,470 - ERROR - An error occurred: 400: Fasting Blood Glucose must be between 70 and 300 mg/dL.
+2025-06-23 07:03:50,715 - ERROR - An error occurred: 400: BMI must be between 15 and 50 kg/m².
+2025-06-23 07:04:06,214 - ERROR - An error occurred: 400: Cholesterol must be between 100 and 300 mg/dL.
+2025-06-23 07:04:31,797 - ERROR - An error occurred: 400: Albuminuria must be between 0.5 and 3.0 mg/dL.
+2025-06-23 07:04:44,917 - ERROR - An error occurred: 400: Visual Acuity must be one of: Normal, Mild, Moderate, Severe, Proliferative
+2025-06-23 07:05:23,862 - INFO - Data inserted successfully for patient id 11111
+2025-06-23 07:05:36,018 - INFO - Data get successfully for patient id 11111
+2025-06-23 07:27:08,211 - ERROR - Error: 404: No records found for this patient ID.
+2025-06-23 07:28:39,564 - ERROR - Error: 404: No records found for this patient ID.
+2025-06-23 07:32:49,433 - ERROR - Error: 404: No records found for this patient ID.
+2025-06-23 07:39:10,507 - ERROR - Error: 404: No records found for this patient ID.
+2025-06-23 07:39:21,243 - INFO - ✅ Data retrieved successfully for all patients
+2025-06-23 07:41:20,812 - INFO - Data updated successfully for patient id 1001
+2025-06-23 07:41:53,649 - INFO -  Deleted patient with patient_id 1001
+2025-06-23 07:42:07,192 - ERROR - Error: 404: No records found for this patient ID.
+2025-06-23 11:19:14,139 - ERROR - Error while updating patient: 404: Patient not found
+2025-06-23 11:19:25,842 - INFO - ✅ Data retrieved successfully for all patients
+2025-06-23 11:20:02,572 - ERROR - Error: 404: No records found for this patient ID.
+2025-06-23 11:20:41,253 - ERROR - Error: 404: No records found for this patient ID.
+2025-06-23 11:21:16,703 - ERROR - Error: 404: No records found for this patient ID.
+2025-06-23 11:22:31,930 - INFO - Data inserted successfully for patient id 1006
+2025-06-23 11:23:32,134 - ERROR - Error: 404: No records found for this patient ID.
+2025-06-23 11:23:48,546 - INFO - Data inserted successfully for patient id 125
+2025-06-23 11:57:09,843 - INFO - ✅ Data retrieved successfully for all patients
+2025-06-23 11:58:29,704 - ERROR - An error occurred: 400: HbA1c Level must be between 4.0% and 14.0%.
+2025-06-23 11:58:44,123 - ERROR - An error occurred: 400: Blood Pressure must be between 90 and 200 mmHg.
+2025-06-23 11:58:54,719 - ERROR - An error occurred: 400: Fasting Blood Glucose must be between 70 and 300 mg/dL.
+2025-06-23 11:59:08,483 - ERROR - An error occurred: 400: BMI must be between 15 and 50 kg/m².
+2025-06-23 11:59:21,533 - ERROR - An error occurred: 400: Cholesterol must be between 100 and 300 mg/dL.
+2025-06-23 11:59:46,061 - ERROR - An error occurred: 400: Albuminuria must be between 0.5 and 3.0 mg/dL.
+2025-06-23 11:59:54,630 - ERROR - An error occurred: 400: Visual Acuity must be one of: Normal, Mild, Moderate, Severe, Proliferative
+2025-06-23 12:00:26,462 - INFO - Data inserted successfully for patient id 528
+2025-06-23 12:00:51,517 - INFO - Data inserted successfully for patient id 529
+2025-06-23 12:05:39,961 - INFO - Data inserted successfully for patient id 530
+2025-06-23 12:22:44,339 - INFO - ✅ Data retrieved successfully for all patients
+2025-06-23 12:23:38,132 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:23:38,142 - ERROR - An error occurred: 400: HbA1c Level must be between 4.0% and 14.0%.
+2025-06-23 12:23:54,661 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:23:54,671 - ERROR - An error occurred: 400: Blood Pressure must be between 90 and 200 mmHg.
+2025-06-23 12:24:10,436 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:24:10,445 - ERROR - An error occurred: 400: Fasting Blood Glucose must be between 70 and 300 mg/dL.
+2025-06-23 12:24:27,733 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:24:27,774 - ERROR - An error occurred: 400: BMI must be between 15 and 50 kg/m².
+2025-06-23 12:24:38,994 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:24:39,003 - ERROR - An error occurred: 400: Cholesterol must be between 100 and 300 mg/dL.
+2025-06-23 12:25:07,035 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:25:07,062 - ERROR - An error occurred: 400: Albuminuria must be between 0.5 and 3.0 mg/dL.
+2025-06-23 12:25:17,646 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:25:17,656 - ERROR - An error occurred: 400: Visual Acuity must be one of: Normal, Mild, Moderate, Severe, Proliferative
+2025-06-23 12:25:29,617 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:25:29,635 - INFO - Data inserted successfully for patient id 125
+2025-06-23 12:26:20,279 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 12:26:20,300 - INFO - Data inserted successfully for patient id 125
