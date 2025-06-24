@@ -328,3 +328,14 @@
 2025-06-23 14:28:12,144 - ERROR - An error occurred: 400: Mobile number must contain exactly 10 digits.
 2025-06-23 14:28:29,563 - INFO - New patient 1991 – first-time registration.
 2025-06-23 14:28:29,576 - ERROR - An error occurred: 400: Mobile number must contain exactly 10 digits.
+2025-06-23 14:34:33,800 - ERROR - Error while updating patient: 404: Patient not found
+2025-06-23 14:34:52,919 - ERROR - An error occurred: 404: Patient not found
+2025-06-23 14:35:32,667 - INFO - ✅ Data retrieved successfully for all patients
+2025-06-23 14:35:48,699 - ERROR - Error while updating patient: 400: Mobile number must contain exactly 10 digits.
+2025-06-23 14:36:08,755 - INFO - Data updated successfully for patient id 125
+2025-06-23 14:36:47,491 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-23 14:37:08,698 - INFO - Returning patient 125 – new visit recorded.
+2025-06-23 14:37:08,707 - ERROR - An error occurred: 400: HbA1c Level must be between 4.0% and 14.0%.
+2025-06-23 14:37:31,907 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-24 05:04:27,474 - INFO - ✅ Data retrieved successfully for all patients
+2025-06-24 09:54:16,309 - ERROR - Error: 404: No records found for this patient ID.

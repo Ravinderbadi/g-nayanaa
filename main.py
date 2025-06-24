@@ -618,24 +618,41 @@ def create_patient(patient_id: int, form: Form2):
 
 
 
-@app.get("/patient/{patient_id}", status_code=status.HTTP_200_OK)
-def get_patient(patient_id: int):
+@app.get("/patients", status_code=status.HTTP_200_OK)
+def get_patients(page: int = 1, limit: int = 10):
     conn = connection
     cursor = conn.cursor(dictionary=True)
+
     try:
-        cursor.execute("SELECT * FROM patient_form WHERE patient_id = %s", (patient_id,))
+        offset = (page - 1) * limit
+
+        # 1. Fetch total count
+        cursor.execute("SELECT COUNT(*) AS total FROM patient_form")
+        total = cursor.fetchone()["total"]
+
+        # 2. Fetch paginated data
+        cursor.execute("""
+            SELECT * FROM patient_form 
+            ORDER BY visit_id DESC
+            LIMIT %s OFFSET %s
+        """, (limit, offset))
         patients = cursor.fetchall()
-        if not patients:
-            raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Patient not found")
-        logger.info(f"Data get successfully for patient id {patient_id}")
-        return patients
+
+        return {
+            "page": page,
+            "limit": limit,
+            "total_patients": total,
+            "total_pages": (total + limit - 1) // limit,  # ceiling division
+            "patients": patients
+        }
+
     except Exception as e:
-        logger.error(f"An error occurred: {e}")
-        connection.rollback()  # Rollback the transaction in case of an error
+        conn.rollback()
         raise HTTPException(status_code=500, detail=f"Database error: {e}")
     finally:
         cursor.close()
-        #conn.close()
+        
+
 
 
 @app.delete("/patient/{patient_id}", status_code=status.HTTP_200_OK)
