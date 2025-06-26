@@ -339,3 +339,22 @@
 2025-06-23 14:37:31,907 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
 2025-06-24 05:04:27,474 - INFO - ✅ Data retrieved successfully for all patients
 2025-06-24 09:54:16,309 - ERROR - Error: 404: No records found for this patient ID.
+2025-06-25 12:30:35,710 - INFO - New patient 7890 – first-time registration.
+2025-06-25 12:30:35,774 - ERROR - An error occurred: 400: HbA1c Level must be between 4.0% and 14.0%.
+2025-06-25 12:31:15,380 - INFO - New patient 7890 – first-time registration.
+2025-06-25 12:31:15,402 - ERROR - An error occurred: 400: Blood Pressure must be between 90 and 200 mmHg.
+2025-06-25 12:31:39,805 - INFO - New patient 7890 – first-time registration.
+2025-06-25 12:31:39,815 - ERROR - An error occurred: 400: Fasting Blood Glucose must be between 70 and 300 mg/dL.
+2025-06-25 12:32:03,284 - INFO - New patient 7890 – first-time registration.
+2025-06-25 12:32:03,296 - ERROR - An error occurred: 400: BMI must be between 15 and 50 kg/m².
+2025-06-25 12:32:34,606 - INFO - New patient 7890 – first-time registration.
+2025-06-25 12:32:34,643 - ERROR - An error occurred: 400: Cholesterol must be between 100 and 300 mg/dL.
+2025-06-25 12:33:04,112 - INFO - New patient 7890 – first-time registration.
+2025-06-25 12:33:04,150 - ERROR - An error occurred: 400: Albuminuria must be between 0.5 and 3.0 mg/dL.
+2025-06-25 12:33:33,207 - INFO - New patient 7890 – first-time registration.
+2025-06-25 12:33:33,220 - ERROR - An error occurred: 400: Mobile number must contain exactly 10 digits.
+2025-06-25 12:33:49,918 - INFO - New patient 7890 – first-time registration.
+2025-06-25 12:33:49,940 - INFO - ✅ Patient record created for patient_id 7890
+2025-06-25 12:34:22,052 - ERROR - An error occurred: 400: Patient ID exists but with a different mobile number.
+2025-06-25 12:34:32,522 - INFO - New patient 78903 – first-time registration.
+2025-06-25 12:34:32,534 - ERROR - An error occurred: 400: Mobile number must contain exactly 10 digits.

@@ -59,4 +59,11 @@ CREATE TABLE patient_form (
     rate(container_cpu_usage_seconds_total{container="fastapi"}[1m]) * 100 number of api hits
 
     sum(http_requests_total{handler="/get_data_from_api_logs"})
+# Connecting docker mysql conatiner to Local mysql workbench
+1.open mysql workbench
+2.made a newconnection
+a.connection_name: any name
+b.Host Name:127.0.0.1
+c.port:3307
+d.password:Iscs@123
 

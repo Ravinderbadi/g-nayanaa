@@ -4,7 +4,7 @@ import io
 import numpy as np
 import torch
 import torch.nn as nn
-from fastapi import FastAPI, File, UploadFile, HTTPException,Request,status,Depends
+from fastapi import FastAPI, File, UploadFile, HTTPException,Request,status,Depends,Query
 from fastapi.responses import JSONResponse
 from torchvision import transforms, models
 from PIL import Image
@@ -619,7 +619,12 @@ def create_patient(patient_id: int, form: Form2):
 
 
 @app.get("/patients", status_code=status.HTTP_200_OK)
-def get_patients(page: int = 1, limit: int = 10):
+def get_patients(
+    page: int = Query(1, ge=1, description="Page number"),
+    limit: int = Query(10, ge=1, le=100, description="Items per page (max 100)")
+):
+   
+
     conn = connection
     cursor = conn.cursor(dictionary=True)
 
@@ -649,6 +654,28 @@ def get_patients(page: int = 1, limit: int = 10):
     except Exception as e:
         conn.rollback()
         raise HTTPException(status_code=500, detail=f"Database error: {e}")
+    finally:
+        cursor.close()
+
+
+@app.get("/patients/{patient_id}", status_code=status.HTTP_200_OK)
+def get_patient_by_id(patient_id: int):
+    conn = connection
+    cursor = conn.cursor(dictionary=True)
+
+    try:
+        cursor.execute("SELECT * FROM patient_form WHERE patient_id = %s", (patient_id,))
+        patient = cursor.fetchone()
+
+        if not patient:
+            raise HTTPException(status_code=404, detail="Patient not found")
+
+        return {"message": "Patient found", "patient": patient}
+
+    except Exception as e:
+        conn.rollback()
+        raise HTTPException(status_code=500, detail=f"Database error: {e}")
+
     finally:
         cursor.close()
         
